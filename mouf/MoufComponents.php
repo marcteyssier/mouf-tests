@@ -391,8 +391,6 @@ $moufManager->addComponentInstances(array (
           1 => '__anonymous__fefb_491389006',
           2 => '__anonymous__fefb_1013457062',
           3 => '__anonymous__fefb_2113837099',
-          4 => '__anonymous__fefb_1528034064',
-          5 => '__anonymous__fefb_382255897',
         ),
         'parametertype' => 'object',
         'type' => 'string',
@@ -407,6 +405,101 @@ $moufManager->addComponentInstances(array (
     'class' => 'Psr7Middlewares\\Middleware\\Payload',
     'external' => false,
     'weak' => false,
+  ),
+  '__anonymous__ce69_17363' => 
+  array (
+    'class' => 'Mouf\\Utils\\Patcher\\Commands\\SkipPatchCommand',
+    'external' => false,
+    'anonymous' => true,
+    'weak' => true,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => NULL,
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  '__anonymous__ce69_22692' => 
+  array (
+    'class' => 'Mouf\\Utils\\Patcher\\Commands\\ListPatchesCommand',
+    'external' => false,
+    'anonymous' => true,
+    'weak' => true,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => NULL,
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  '__anonymous__ce69_23312' => 
+  array (
+    'class' => 'Mouf\\Utils\\Patcher\\Commands\\RevertPatchCommand',
+    'external' => false,
+    'anonymous' => true,
+    'weak' => true,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => NULL,
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  '__anonymous__ce69_26125' => 
+  array (
+    'class' => 'Mouf\\Utils\\Patcher\\Commands\\ApplyAllPatchesCommand',
+    'external' => false,
+    'anonymous' => true,
+    'weak' => true,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => NULL,
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  '__anonymous__ce69_6594' => 
+  array (
+    'class' => 'Mouf\\Utils\\Patcher\\Commands\\ApplyPatchCommand',
+    'external' => false,
+    'anonymous' => true,
+    'weak' => true,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => NULL,
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
   ),
   '__anonymous__fefb_1010748219' => 
   array (
@@ -426,62 +519,6 @@ $moufManager->addComponentInstances(array (
       0 => 
       array (
         'value' => 'Mouf\\Mvc\\Splash\\Routers\\SplashDefaultRouter',
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-    ),
-  ),
-  '__anonymous__fefb_1528034064' => 
-  array (
-    'class' => 'Mouf\\Mvc\\Splash\\Routers\\ErrorRouter',
-    'external' => false,
-    'anonymous' => true,
-    'weak' => true,
-    'constructor' => 
-    array (
-      0 => 
-      array (
-        'value' => 'return $container->get(\'whoopsMiddleware\');',
-        'parametertype' => 'primitive',
-        'type' => 'php',
-        'metadata' => 
-        array (
-        ),
-      ),
-      1 => 
-      array (
-        'value' => NULL,
-        'parametertype' => 'primitive',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-      2 => 
-      array (
-        'value' => '__anonymous__fefb_1748062884',
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-    ),
-  ),
-  '__anonymous__fefb_1748062884' => 
-  array (
-    'class' => 'Mouf\\Utils\\Common\\Condition\\ToCondition',
-    'external' => false,
-    'anonymous' => true,
-    'weak' => true,
-    'constructor' => 
-    array (
-      0 => 
-      array (
-        'value' => '__anonymous__fefb_733424432',
         'parametertype' => 'object',
         'type' => 'string',
         'metadata' => 
@@ -528,25 +565,6 @@ $moufManager->addComponentInstances(array (
       ),
     ),
   ),
-  '__anonymous__fefb_382255897' => 
-  array (
-    'class' => 'Mouf\\Mvc\\Splash\\Routers\\ErrorRouter',
-    'external' => false,
-    'anonymous' => true,
-    'weak' => true,
-    'constructor' => 
-    array (
-      0 => 
-      array (
-        'value' => 'Mouf\\Mvc\\Splash\\Routers\\ExceptionRouter',
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-    ),
-  ),
   '__anonymous__fefb_491389006' => 
   array (
     'class' => 'Mouf\\Mvc\\Splash\\Routers\\Router',
@@ -572,25 +590,6 @@ $moufManager->addComponentInstances(array (
     'external' => false,
     'anonymous' => true,
     'weak' => true,
-  ),
-  '__anonymous__fefb_733424432' => 
-  array (
-    'class' => 'Mouf\\Utils\\Value\\Variable',
-    'external' => false,
-    'anonymous' => true,
-    'weak' => true,
-    'constructor' => 
-    array (
-      0 => 
-      array (
-        'value' => 'DEBUG',
-        'parametertype' => 'primitive',
-        'type' => 'config',
-        'metadata' => 
-        array (
-        ),
-      ),
-    ),
   ),
   'annotationReader' => 
   array (
@@ -839,6 +838,11 @@ return new \\Doctrine\\Common\\Annotations\\CachedReader($reader, $container->ge
         0 => 'dbalRunSqlCommand',
         1 => 'dbalImportCommand',
         2 => 'dbalReservedWordsCommand',
+        3 => '__anonymous__ce69_22692',
+        4 => '__anonymous__ce69_26125',
+        5 => '__anonymous__ce69_6594',
+        6 => '__anonymous__ce69_17363',
+        7 => '__anonymous__ce69_23312',
       ),
     ),
   ),
@@ -916,6 +920,54 @@ return new \\Doctrine\\Common\\Annotations\\CachedReader($reader, $container->ge
     ),
     'weak' => false,
     'comment' => '',
+  ),
+  'dbConnection' => 
+  array (
+    'class' => 'Mouf\\Database\\DBConnection\\MySqlConnection',
+    'external' => false,
+    'fieldProperties' => 
+    array (
+      'host' => 
+      array (
+        'value' => 'DB_HOST',
+        'type' => 'config',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'port' => 
+      array (
+        'value' => 'DB_PORT',
+        'type' => 'config',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'user' => 
+      array (
+        'value' => 'DB_USERNAME',
+        'type' => 'config',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'password' => 
+      array (
+        'value' => 'DB_PASSWORD',
+        'type' => 'config',
+        'metadata' => 
+        array (
+        ),
+      ),
+      'dbname' => 
+      array (
+        'value' => 'DB_NAME',
+        'type' => 'config',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
   ),
   'dbalConnection' => 
   array (
@@ -1007,6 +1059,60 @@ return new \\Doctrine\\Common\\Annotations\\CachedReader($reader, $container->ge
     'class' => 'Doctrine\\DBAL\\Tools\\Console\\Command\\RunSqlCommand',
     'external' => false,
     'weak' => false,
+  ),
+  'dbpatch.ce69-20170918113652-patch-initialize' => 
+  array (
+    'class' => 'Mouf\\Database\\Patcher\\DatabasePatch',
+    'external' => false,
+    'weak' => false,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => 'dbConnection',
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        'value' => 'ce69-20170918113652-patch-initialize',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'value' => 'database/up/20170918113652-patch-initialize.sql',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'value' => NULL,
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      4 => 
+      array (
+        'value' => 'Initialize DB',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
   ),
   'defaultDoctrineCache' => 
   array (
@@ -1363,6 +1469,19 @@ return $driver;
       ),
     ),
   ),
+  'patchService' => 
+  array (
+    'class' => 'Mouf\\Utils\\Patcher\\PatchService',
+    'external' => false,
+    'weak' => false,
+    'setterBinds' => 
+    array (
+      'setPatchs' => 
+      array (
+        0 => 'dbpatch.ce69-20170918113652-patch-initialize',
+      ),
+    ),
+  ),
   'psr.errorLogLogger' => 
   array (
     'class' => 'Mouf\\Utils\\Log\\Psr\\ErrorLogLogger',
@@ -1629,12 +1748,6 @@ return rtrim(sys_get_temp_dir(), \'/\\\\\').\'/mouftwigtemplatemain_\'.$posixGet
       'sessionManager' => 'sessionManager',
     ),
   ),
-  'whoopsMiddleware' => 
-  array (
-    'class' => 'Franzl\\Middleware\\Whoops\\ErrorMiddleware',
-    'external' => false,
-    'weak' => false,
-  ),
 ));
 
 
@@ -1662,13 +1775,6 @@ class Mouf {
 				'constructor' => [
 					0 => function(ContainerInterface $container) {
 						return $container;
-					},
-				],
-			],
-			'__anonymous__fefb_1528034064' => [
-				'constructor' => [
-					0 => function(ContainerInterface $container) {
-						return $container->get('whoopsMiddleware');
 					},
 				],
 			],
@@ -1990,6 +2096,13 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 }
 
 	/**
+	 * @return Mouf\Database\DBConnection\MySqlConnection
+	 */
+	 public static function getDbConnection() {
+	 	return MoufManager::getMoufManager()->get('dbConnection');
+	 }
+
+	/**
 	 * @return Doctrine\DBAL\Connection
 	 */
 	 public static function getDbalConnection() {
@@ -2022,6 +2135,13 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 */
 	 public static function getDbalRunSqlCommand() {
 	 	return MoufManager::getMoufManager()->get('dbalRunSqlCommand');
+	 }
+
+	/**
+	 * @return Mouf\Database\Patcher\DatabasePatch
+	 */
+	 public static function getDbpatch_ce6920170918113652patchinitialize() {
+	 	return MoufManager::getMoufManager()->get('dbpatch.ce69-20170918113652-patch-initialize');
 	 }
 
 	/**
@@ -2106,6 +2226,13 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 */
 	 public static function getPackageRenderer_moufhtml_widgets_messageservice() {
 	 	return MoufManager::getMoufManager()->get('packageRenderer_mouf/html.widgets.messageservice');
+	 }
+
+	/**
+	 * @return Mouf\Utils\Patcher\PatchService
+	 */
+	 public static function getPatchService() {
+	 	return MoufManager::getMoufManager()->get('patchService');
 	 }
 
 	/**
@@ -2197,13 +2324,6 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 */
 	 public static function getUserMessageService() {
 	 	return MoufManager::getMoufManager()->get('userMessageService');
-	 }
-
-	/**
-	 * @return Franzl\Middleware\Whoops\ErrorMiddleware
-	 */
-	 public static function getWhoopsMiddleware() {
-	 	return MoufManager::getMoufManager()->get('whoopsMiddleware');
 	 }
 
 }

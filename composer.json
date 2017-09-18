@@ -2,7 +2,9 @@
   "require": {
     "mouf/mouf": "~2.0.0",
     "mouf/mvc.splash": "~8.0",
-    "mouf/database.tdbm": "~4.1"
+    "mouf/database.tdbm": "~4.1",
+	"mouf/utils.patcher": "1.*",
+	"mouf/database.patcher": "1.*"
   },
   "autoload": {
     "psr-4": {

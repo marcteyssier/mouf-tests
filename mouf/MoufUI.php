@@ -4,7 +4,10 @@
  */
 
 // Files declared in the extra:mouf:adminRequire section.
+require_once __DIR__.'/../vendor/mouf/database.dbconnection/src/DbConnectionAdmin.php';
 require_once __DIR__.'/../vendor/mouf/database.doctrine-dbal-wrapper/src/DBALConnectionAdmin.php';
+require_once __DIR__.'/../vendor/mouf/utils.patcher/src/PatchAdmin.php';
+require_once __DIR__.'/../vendor/mouf/database.patcher/src/DBPatchAdmin.php';
 require_once __DIR__.'/../vendor/mouf/utils.cache.cache-interface/CacheAdmin.php';
 require_once __DIR__.'/../vendor/mouf/database.tdbm/src/TdbmAdmin.php';
 require_once __DIR__.'/../vendor/mouf/html.utils.weblibrarymanager/src/WebLibraryAdmin.php';

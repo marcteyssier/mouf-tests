@@ -107,14 +107,14 @@ return array (
   array (
     'status' => 'done',
     'type' => 'url',
-    'url' => 'splash8install/',
+    'url' => 'splash82install/',
     'package' => 'mouf/mvc.splash',
   ),
   15 => 
   array (
     'status' => 'done',
     'type' => 'url',
-    'url' => 'splash8install/writeHtAccess',
+    'url' => 'splash82install/writeHtAccess',
     'package' => 'mouf/mvc.splash',
   ),
   16 => 
@@ -137,5 +137,26 @@ return array (
     'type' => 'url',
     'url' => 'tdbminstall/',
     'package' => 'mouf/database.tdbm',
+  ),
+  19 => 
+  array (
+    'status' => 'done',
+    'type' => 'class',
+    'class' => 'Mouf\\Utils\\Patcher\\PatchInstaller',
+    'package' => 'mouf/utils.patcher',
+  ),
+  20 => 
+  array (
+    'status' => 'done',
+    'type' => 'url',
+    'url' => 'dbconnectioninstall/',
+    'package' => 'mouf/database.dbconnection',
+  ),
+  21 => 
+  array (
+    'status' => 'done',
+    'type' => 'file',
+    'file' => 'src/install.php',
+    'package' => 'mouf/database.patcher',
   ),
 );

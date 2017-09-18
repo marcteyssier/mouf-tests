@@ -60,4 +60,18 @@ class RootController {
 
         return new HtmlResponse($this->template);
     }
+	
+
+    /**
+     * @URL("cars")
+
+     */
+    public function cars() {
+        // TODO: write content of action here
+
+        // Let's add the twig file to the template.
+        $this->content->addHtmlElement(new TwigTemplate($this->twig, 'views/root/index.twig', array("message"=>"TEST")));
+
+        return new HtmlResponse($this->template);
+    }
 }
